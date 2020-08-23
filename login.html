@@ -6,9 +6,86 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+    <link rel="shortcut icon" type="image/png" href="img/image-blog.ico">
+  <title>Login - blog</title>
 </head>
 <body>
+
+  <header class="header">
+    <div class="header__content">
+      <div class="header__content-mobile">
+        <button class="toggle-button">
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+        </button>
+        <div class="header__mobile-icon"><img src="./img/logo.png" alt="blog"></div>
+        <ul class="header__items">
+          <li class="header__item header__image">
+              <a href="index.html">
+                  <img src="./img/logo.png" alt="blog">
+              </a>
+          </li>
+          <li class="header__item">
+              <a href="index.html" class="header__item-link">Posts</a>
+          </li>
+        </ul>
+      </div>
+      <nav class="nav">
+        <ul class="nav__items">
+          <li class="nav__item">
+            <a href="login.html" class="nav__item-link">Login</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__item-link">Postar</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="mobile-nav">
+    <div class="mobile-nav__user">
+      <img src="./img/logo.png" alt="logo">
+    </div>
+    <ul class="mobile-nav__items">
+        <li class="mobile-nav__item">
+          <span class="material-icons">account_box</span>
+          <a href="#">Meu Perfil</a>
+        </li>
+        <li class="mobile-nav__item">
+          <span class="material-icons">publish</span>
+          <a href="#">Postar</a>
+        </li>
+        <li class="mobile-nav__item">
+          <span class="material-icons">sensor_door</span>
+          <a href="#">Sair</a>
+        </li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="section-login">
+      <h2 class="section-login--title space">Log in</h2>
+      <div class="login">
+        <form>
+          <div class="login__form-control space">
+              <label>Email</label>
+              <input type="email">
+          </div>
+          <div class="login__form-control space">
+              <label>Password</label>
+              <input type="password">
+          </div>
+          <button class="login__button active">Log in</button>
+        </form>
+      </div>
+      <div class="login__new">
+        <p class="login__new-text">New to BlogPost?</p>
+        <a href="../signup/signup.html" class="login__new-link">Sign up</a>
+      </div>
+    </section>
+  </main>
   
   <script src="shared.js"></script>
 </body>
