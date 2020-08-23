@@ -28,7 +28,7 @@ body {
 @supports (display: grid) {
   body {
       display: grid;
-      grid-template-rows: 5rem auto fit-content(9rem);
+      grid-template-rows: 6.5rem auto fit-content(9rem);
       grid-template-areas: "header"
                            "main"
                            "footer";

@@ -4,6 +4,11 @@
     border-bottom: 1px solid rgba($color-black, 0.2);
     display: flex;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: $color-white;
 
     &__content {
         height: 100%;
