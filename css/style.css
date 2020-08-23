@@ -24,7 +24,7 @@ body {
 @supports (display: grid) {
   body {
     display: grid;
-    grid-template-rows: 5rem auto fit-content(9rem);
+    grid-template-rows: 6.5rem auto fit-content(9rem);
     grid-template-areas: "header" "main" "footer";
     padding-top: 0;
     height: 100%; } }
@@ -37,7 +37,12 @@ main {
   width: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #fff; }
   .header__content {
     height: 100%;
     width: 100%;
@@ -149,3 +154,60 @@ main {
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);
   transition: opacity 0.2s linear; }
+
+.section-posts {
+  height: auto;
+  max-width: 1100px;
+  padding: 2rem 0;
+  margin: 0 auto; }
+
+.posts {
+  max-width: 80rem;
+  margin: 3rem auto;
+  list-style: none; }
+  .posts__item {
+    margin: 3rem 0;
+    padding: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: all .5s; }
+    .posts__item:hover {
+      transform: translateY(-1rem) scale(1.05);
+      box-shadow: 0 1.5rem 3rem -2.2rem rgba(0, 0, 0, 0.9); }
+
+.item__title {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.7); }
+  .item__title-text {
+    font-size: 2rem; }
+    .item__title-text:hover {
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.5); }
+  .item__title-icons:hover {
+    cursor: pointer; }
+  .item__title-icons--favorite:hover {
+    color: red; }
+
+.item__content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 1.5rem; }
+  .item__content-image {
+    height: 15rem;
+    width: 31%;
+    margin: 0;
+    background-image: url("../../img/nat-1.jpg");
+    background-size: cover;
+    border-radius: 3px; }
+  .item__content-text {
+    width: 68%;
+    padding: 0 2rem;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    letter-spacing: .2rem;
+    text-align: left; }

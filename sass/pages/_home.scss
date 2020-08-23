@@ -1,0 +1,81 @@
+.section-posts {
+    height: auto;
+    max-width: 1100px;
+    padding: 2rem 0;
+    margin: 0 auto;
+}
+
+.posts {
+    max-width: 80rem;
+    margin: 3rem auto;
+    list-style: none;
+
+    &__item {
+        margin: 3rem 0;
+        padding: 1.5rem;
+        border: 1px solid rgba($color-black, .2);
+        border-radius: 4px;
+        transition: all .5s;
+
+        &:hover {
+            transform: translateY(-1rem) scale(1.05);
+            box-shadow: 0 1.5rem 3rem -2.2rem rgba($color-black, .9);
+        }
+    }
+}
+
+.item {
+    &__title {
+        height: 5rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $font-title-color;
+
+        &-text {
+            font-size: $font-h2;
+
+            &:hover {
+                cursor: pointer;
+                color: rgba($color-black, .5);
+            }
+        }
+
+        &-icons {
+            &:hover {
+                cursor: pointer;
+            }
+
+            &--favorite {
+                &:hover {
+                    color: red;
+                }
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 1.5rem;
+        &-image {
+            height: 15rem;
+            width: 31%;
+            margin: 0;
+            background-image: url('../../img/nat-1.jpg');
+            background-size: cover;
+            border-radius: 3px;
+        }
+
+        &-text {
+            width: 68%;
+            padding: 0 2rem;
+            font-size: $font-default;
+            line-height: 1.7;
+            letter-spacing: .2rem;
+            text-align: left;
+        }
+    }
+}
