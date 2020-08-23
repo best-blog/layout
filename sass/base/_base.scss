@@ -7,10 +7,36 @@
 }
 
 html {
+  height: 100%;
   font-size: 62.5%; // 1rem = 10px; 10/16 = 62.5%
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
-  padding: 3rem;
+  padding-top: 3.5rem;
+  background-color: $color-white;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding-top: 3.5rem;
+  background-color: #fff;
+}
+
+@supports (display: grid) {
+  body {
+      display: grid;
+      grid-template-rows: 5rem auto fit-content(9rem);
+      grid-template-areas: "header"
+                           "main"
+                           "footer";
+      padding-top: 0;
+      height: 100%;
+  }
+}
+
+main {
+  grid-area: main;
 }
