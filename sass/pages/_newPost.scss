@@ -1,0 +1,68 @@
+.section-newpost {
+    height: auto;
+    max-width: 1100px;
+    padding: 5rem 0;
+    margin: 0 auto;
+
+    &--title {
+        text-align: center;
+        font-size: $font-h2;
+        color: $font-title-color;
+    }
+}
+
+.image__preview {
+    height: 175px;
+    width: 140px;
+    position: relative;
+
+    &--input {
+        height: 175px;
+        width: 140px;
+        position: absolute;
+        border: none;
+        outline: none;
+        background: transparent;
+        opacity: 0;
+        z-index: 10;
+        cursor: pointer;
+    }
+
+    &--img {
+        position: absolute;
+        height: 175px;
+        width: 140px;
+        opacity: 1;
+        z-index: 5;
+        background-image: url('');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &--change {
+        height: 175px;
+        width: 140px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        background-color: #ccc;
+
+        & > span {
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+    }
+
+    &--hover {
+        height: 175px;
+        width: 140px;
+        position: absolute;
+        background: linear-gradient(to top, rgba(14, 48, 143, 0.3), 100%, transparent);
+        opacity: 0;
+    }
+}
