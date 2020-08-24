@@ -7,7 +7,7 @@
 
 > Tela Postagem
 
-![Postagem](/blog-post)
+![Postagem](/blog-post.png)
 
 > Tela Novo poste
 
