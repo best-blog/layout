@@ -40,6 +40,11 @@
                 cursor: pointer;
                 color: rgba($color-black, .5);
             }
+
+            & > a {
+                color: inherit;
+                text-decoration: none;
+            }
         }
 
         &-icons {
