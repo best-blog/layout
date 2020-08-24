@@ -349,3 +349,58 @@ main {
       .comments__like--icon:hover {
         cursor: pointer;
         color: red; }
+
+.section-newpost {
+  height: auto;
+  max-width: 1100px;
+  padding: 5rem 0;
+  margin: 0 auto; }
+  .section-newpost--title {
+    text-align: center;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.7); }
+
+.image__preview {
+  height: 175px;
+  width: 140px;
+  position: relative; }
+  .image__preview--input {
+    height: 175px;
+    width: 140px;
+    position: absolute;
+    border: none;
+    outline: none;
+    background: transparent;
+    opacity: 0;
+    z-index: 10;
+    cursor: pointer; }
+  .image__preview--img {
+    position: absolute;
+    height: 175px;
+    width: 140px;
+    opacity: 1;
+    z-index: 5;
+    background-image: url("");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .image__preview--change {
+    height: 175px;
+    width: 140px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #ccc; }
+    .image__preview--change > span {
+      color: white;
+      font-size: 1.2rem;
+      font-weight: 600; }
+  .image__preview--hover {
+    height: 175px;
+    width: 140px;
+    position: absolute;
+    background: linear-gradient(to top, rgba(14, 48, 143, 0.3), 100%, transparent);
+    opacity: 0; }
